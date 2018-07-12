@@ -1,0 +1,42 @@
+DOM
+
+www.caniuse.com = site para verificar quais browsers aceitam a feature
+
+el = elemento
+el.parentNode = tras o pai do elemento
+el.childNodes = tras os filhos do elemento
+el.firstChild = tras o primeiro filho do elemento
+el.lastChild = tras o ultimo filho do elemento
+el.nextSibling = tras o proximo irmao do elemento
+el.previousSibling = tras o irmao anterior do elemento
+el.nodeType = tipo do elemento, document=9, text=3, element=1, comments=8, elementFragment=11
+el.nodeValue = pega o valor do elemento (texto)
+el.nodeName = nome do elemento, (div, section, text, comment etc)
+
+// Trazem somente html, descartando textos e comentarios
+el.children = trás os elementos filhos
+el.firstElementChild = primeiro filho elemento html
+el.nextElementSibling = tras o proximo elemento irmao
+el.previousElementSibling = tras o elemento irmao anterior
+el.childElementCount = qtd de filhos que o elemento tem
+
+// Metodos de elementos do dom
+el.hasAttribute(name) = se o elemento tem aquele atributo especifico //booleano
+el.hasAttributes() = se o elemento tem qualquer atributo //booleano
+el.appendChild(child) = adiciona um filho dentro daquele elemento
+el.insertBefore(node, beforeWhom) = insere elemento antes, node = o elemento a ser inserido, beforeWhom = antes de quem ele sera inserido
+el.cloneNode(boolean) = clona o elemento, true = clona com o conteudo do container, false = só clona o container
+el.hasChildNodes() = verifica se o elemento tem algum filho
+el.removeChild(child) = remove o filho passado por parametro
+el.replaceChild(novo, velho) = remove o filho antigo e add o novo
+el.createTextNode(texto) = add o texto passado por parametro
+document.createElement(tagName) = cria um elemento
+
+// Atributos
+el.id = id do elemento
+el.className = classe do elemento
+el.value = valor do elemento
+el.href = valor do link
+el.src = valor do source
+el.getAttribute(attr) = pega o atributo desejado, retorna string
+el.setAttribute(attr, value) = seta o atributo desejado

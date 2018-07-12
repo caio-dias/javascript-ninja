@@ -1,0 +1,34 @@
+/*
+document.createDocumentFragment() = criar um fragmento para melhorar na performance ao manipular dom, ex:
+
+var fragment = document.createDocumentFragment()
+var p = document.createElement('p')
+p.innerText = 'Texto da tag p'
+
+p.appendChild(textP)
+fragment.appendChild(p)
+document.body.appendChild(fragment)
+
+DOMContentLoaded = função para disparar o script só depois que o dom for carregado, ex:
+
+function afterDomLoad(){
+    //TODO CODIGO VAI AQUI DENTRO
+
+    var fragment = document.createDocumentFragment()
+    var p = document.createElement('p')
+    p.innerText = 'Texto da tag p'
+
+    p.appendChild(textP)
+    fragment.appendChild(p)
+    document.body.appendChild(fragment)
+}
+document.addEventListener('DOMContentLoaded', afterDomLoad)
+
+Tecnicas:
+copiar valores:
+
+arrays: var array2 = arr.slice(), quando nao passa parametro, o slice pega todos os valore
+elementos: var divsCopy = Array.prototype.slice.call(document.querySelectorAll('.xxx'))
+*/
+
+
