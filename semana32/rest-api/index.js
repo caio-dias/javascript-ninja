@@ -9,15 +9,16 @@ app.use(bodyParser.urlencoded({extended: false}))
 //resolvendo cross origin
 app.use(cors())
 
-const users = [{
-    username: 'joao',
-    name: 'João',
-    age: 30
-}, {
-    username: 'maria',
-    name: 'Maria',
-    age: 12
-}
+const users = [
+    {
+        username: 'joao',
+        name: 'João',
+        age: 30
+    }, {
+        username: 'maria',
+        name: 'Maria',
+        age: 12
+    }
 ]
 
 app.get('/', (req, res) => {
