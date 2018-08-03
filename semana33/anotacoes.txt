@@ -1,0 +1,12 @@
+Testes
+
+TDD = desenvolvimento dirigido por testes
+BDD = desenvolvimento guiado por comportamento
+(antes de escrever o código, escrever o teste)
+
+baby steps = fazer que o teste passe com o minimo de codigo possivel
+
+fluxo:
+RED: escreve o teste e faz ele falhar
+GREEN: com baby steps escreve o minimo de codigo e faz ele passar
+BLUE: refatora o codigo sem fazer novas funcionalidades
