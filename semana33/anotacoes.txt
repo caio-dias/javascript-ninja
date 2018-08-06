@@ -9,9 +9,11 @@ TDD = desenvolvimento dirigido por testes
 BDD = desenvolvimento guiado por comportamento, facilita a leitura, melhor que o tdd
 (antes de escrever o código, escrever o teste)
 
-baby steps = fazer que o teste passe com o minimo de codigo possivel
+Testes precisam ser limpos e pequenos, unitarios, testar uma unidade por vez
 
-fluxo:
+Baby steps = fazer que o teste passe com o minimo de codigo possivel
+
+Fluxo:
 RED: escreve o teste e faz ele falhar
 GREEN: com baby steps escreve o minimo de codigo e faz ele passar
 BLUE: refatora o codigo sem fazer novas funcionalidades
