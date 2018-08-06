@@ -6,11 +6,11 @@ const expect = require('chai').expect
 const sum = require('../src/sum')
 
 //descricao
-describe('# SUM', () => {
+describe('# Tests of SUM function', () => {
+    //MODO BDD
     //cada it é um teste
     //descrevendo o teste e chamando a funcao de callback
     it('Should SUM module to be a function', () => {
-        //verifica se sum e uma funcao
         expect(sum).to.be.a('function')
     })
 
@@ -28,5 +28,13 @@ describe('# SUM', () => {
 
     it('Should SUM return an error, if the parameter has not a number', () => {
         expect(sum('a','b')).to.be.an('error')
+    })
+
+    //MODO TDD
+    it('Assert', () => {
+        //instanciar modulo assert que vem do node
+        let assert = require('assert')
+        //1 param = metodo/valor a ser testado, 2 param = valor esperado, 3 param = mensagem que aparece se o teste passar
+        assert.equal(sum(20,30), 50, 'Message')
     })
 })

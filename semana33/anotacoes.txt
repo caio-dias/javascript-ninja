@@ -1,7 +1,12 @@
-Testes
+Testes mocha e chai
+- mochajs.org
+- chaijs.com
+
+Mocha: escrever os testes
+Chai: fazer assercoes dos testes
 
 TDD = desenvolvimento dirigido por testes
-BDD = desenvolvimento guiado por comportamento
+BDD = desenvolvimento guiado por comportamento, facilita a leitura, melhor que o tdd
 (antes de escrever o código, escrever o teste)
 
 baby steps = fazer que o teste passe com o minimo de codigo possivel
@@ -10,3 +15,6 @@ fluxo:
 RED: escreve o teste e faz ele falhar
 GREEN: com baby steps escreve o minimo de codigo e faz ele passar
 BLUE: refatora o codigo sem fazer novas funcionalidades
+
+Code coverage (cobertura de codigo): qual a porcentagem do codigo que esta coberta por testes?
+- Istanbul: comando: istanbul cover node_modules/mocha/bin/_mocha
